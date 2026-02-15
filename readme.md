@@ -1,4 +1,21 @@
-# SplitGuides #
+# SplitGuides - Edited for JS 100% #
+
+Added markdown table support and a converter for the 100% route spreadsheet that creates a single markdown file with tables for each location in the spreadsheet. You can load this markdown file as the notes and have a table of all collectibles in the given location on screen. Splitting in LiveSplit will change the notes to the next location.
+
+This package also includes the matching splits and a layout for LiveSplit to go with the notes, as well as an example input spreadsheet and output markdown file.
+
+## Creating the markdown notes from the spreadhseet ##
+Open command line in the folder that contains the `markdown_converter.exe` and run this command after replacing the parts marked with `<>`:
+
+```bash
+markdown_converter.exe --input "<complete file path to the spreadsheet>" --output "<output file path>"
+```
+
+There's an optional argument `--ignore-sheets` with a default value of `Key,Gardening,Holotactics`. If you want to specify a different set of sheets to ignore provide them with `--ignore-sheets` in the same format.
+
+For details about the arguments run `markdown_converter.exe -h`
+
+# Original Readme: #
 
 **Speedrun notes display for Livesplit with markdown and html formatting**
 
