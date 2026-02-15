@@ -385,8 +385,6 @@ class MainWindow(QMainWindow):
                 notes=self.notes.render_splits(start, end),
             )
 
-            with open("C:\\Users\\buszo\\Desktop\\test.html", "w", encoding="utf-8") as f:
-                f.write(html)
             note_uri = Path(self.notefile).absolute().as_uri()
 
             self.ui.notes.setHtml(html, baseUrl=note_uri)
