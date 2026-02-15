@@ -29,6 +29,12 @@ PERMITTED_TAGS = {
     "img",
     "video",
     "source",
+    "table",
+    "thead",
+    "tbody",
+    "tr",
+    "td",
+    "th",
 }
 
 PERMITTED_ATTRIBUTES = {
